@@ -22,7 +22,7 @@ h1 {
 
 }
 
-div {
+.status {
     display: flex;
     flex-flow: row wrap;
     color: white;
@@ -39,5 +39,11 @@ div {
  padding: 10px;
  margin: auto;
  border: 3px solid black;
+}
+
+.restart {
+    font-size: 30px;
+    background-color: violet;
+    border: 1px solid black;
 }
 

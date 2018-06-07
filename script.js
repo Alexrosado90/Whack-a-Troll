@@ -18,17 +18,17 @@ $troll.click(function() {
 });
 
 //setting the timer
-let countDown = 60000
-function clock(){
-   for (let i = 0; i > countDown; i--); {
 
-setInterval(function() { 
-    $timer.html((countDown / 1000) - 1);
-    return countDown
-}, 1000);
+function clock(){
+    let countDown = 60
+
+    setInterval(function() { 
+        $timer.text((countDown--) );
+        
+    }, 1000);
 }
-}
-clock();
+
+console.log(clock())
 });
 
 
