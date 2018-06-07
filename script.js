@@ -17,6 +17,17 @@ $troll.click(function() {
     
 });
 
+//setting the timer
+//function clock(){
+   // for (let i = 60; i > countDown; i--);
+let countDown = 60000;
+setTimeout(function() { 
+    $timer.html((countDown / 1000) - 1);
+    $timer = $timer--;
+
+    
+}, 1000);
+
 });
 
 
