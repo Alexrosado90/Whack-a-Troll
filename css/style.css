@@ -1,0 +1,43 @@
+body {
+  background-color: grey;
+  align-content: center;
+  justify-content: center;
+  margin: auto;
+  
+}
+
+h1 {
+    color: white;
+}
+
+.bridge {
+    width: 80%;
+}
+
+#troll {
+    width: 150px;
+}
+
+#hole {
+
+}
+
+div {
+    display: flex;
+    flex-flow: row wrap;
+    color: white;
+    background-color: purple;
+    padding: 10px;
+   margin: auto;
+    border: 3px solid black;
+
+}
+
+.current-name, .current-score, .current-timer {
+ color: white;
+ background-color: green;
+ padding: 10px;
+ margin: auto;
+ border: 3px solid black;
+}
+
