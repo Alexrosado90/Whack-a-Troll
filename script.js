@@ -19,7 +19,7 @@ $troll.click(function() {
 
 //setting the timer
 
-    let countDown = 10
+    let countDown = 60
 
     let clock = setInterval(function() { 
         $timer.text((countDown--) );
@@ -40,7 +40,6 @@ $troll.click(function() {
 //functions needed
 /*startGame()
 randomHole()
-countDown()
 reset()
  */
 

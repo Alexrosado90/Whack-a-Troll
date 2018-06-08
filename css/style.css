@@ -14,13 +14,29 @@ h1 {
     width: 80%;
 }
 
-#troll {
-    width: 150px;
+#plot {
+    display: grid;
+    grid-template-rows: auto 48px;
 }
 
 #hole {
-
+    display: block;
+        background-image: url('../img/hole.png');
+        width: 100%;
+        content: '';   
+    height: 60px;
+    top: -25px;
+    position: relative;
 }
+
+#troll {
+    background-image: url('../img/troll2.png');
+    background-size: 48%;
+  transform: translateY(20%);
+  transition: transform 0.3s;
+  visibility: hidden;
+}
+
 
 .status {
     display: flex;
