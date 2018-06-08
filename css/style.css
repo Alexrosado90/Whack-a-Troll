@@ -6,11 +6,17 @@ body {
   align-content: center;
   justify-content: center;
   grid-template: auto auto auto;
+  font-family: 'Eater', cursive;
   
 }
 
 h1 {
-    color: white;
+    color: red;
+}
+
+div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 
 #plot {
@@ -21,8 +27,7 @@ h1 {
 #hole {
         display: block;
         background-image: url('../img/hole.png');
-        background-repeat: no-repeat;
-        background-color: whitesmoke;
+        background-repeat:no-repeat;
         width: 100%;
         content: ''; 
         background-size: contain;  
@@ -33,15 +38,18 @@ h1 {
 
 #troll {
     background-image: url('../img/troll2.png');
-    background-size: 48%;
-  transform: translateY(20%);
+    background-size: 100%;
+    background-repeat: center no-repeat;
+  transform: translateY(-120%);
   transition: transform 0.3s;
+  transition-delay: 0.5s;
+
    
 }
 
 .status {
-    display: flex;
-    flex-flow: row wrap;
+   display:grid;
+   grid-template-columns: auto auto auto;
     color: white;
     background-color: purple;
     padding: 10px;
