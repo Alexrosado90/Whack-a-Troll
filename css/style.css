@@ -1,17 +1,16 @@
 body {
   background-color: grey;
+  margin: 0;
+  display: grid;
+  height: 100vh;
   align-content: center;
   justify-content: center;
-  margin: auto;
+  grid-template: auto auto auto;
   
 }
 
 h1 {
     color: white;
-}
-
-.bridge {
-    width: 80%;
 }
 
 #plot {
@@ -20,10 +19,13 @@ h1 {
 }
 
 #hole {
-    display: block;
+        display: block;
         background-image: url('../img/hole.png');
+        background-repeat: no-repeat;
+        background-color: whitesmoke;
         width: 100%;
-        content: '';   
+        content: ''; 
+        background-size: contain;  
     height: 60px;
     top: -25px;
     position: relative;
@@ -34,9 +36,8 @@ h1 {
     background-size: 48%;
   transform: translateY(20%);
   transition: transform 0.3s;
-  visibility: hidden;
+   
 }
-
 
 .status {
     display: flex;
