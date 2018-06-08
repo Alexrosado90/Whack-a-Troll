@@ -1,5 +1,5 @@
 body {
-  background-color: grey;
+  background-color: forestgreen;
   margin: 0;
   display: grid;
   height: 100vh;
@@ -15,16 +15,18 @@ h1 {
 }
 
 div {
+    background-color: forestgreen;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    margin: 10px 10px 10px 10px;
 }
 
-#plot {
+.plot {
     display: grid;
     grid-template-rows: auto 48px;
 }
 
-#hole {
+.hole {
         display: block;
         background-image: url('../img/hole.png');
         background-repeat:no-repeat;
@@ -39,12 +41,13 @@ div {
 #troll {
     background-image: url('../img/troll2.png');
     background-size: 100%;
-    background-repeat: center no-repeat;
+    background-repeat: center bottom no-repeat;
   transform: translateY(-120%);
-  transition: transform 0.3s;
+  transition: transform 0.4s;
   transition-delay: 0.5s;
+  visibility: hidden;
 
-   
+    
 }
 
 .status {
@@ -70,5 +73,10 @@ div {
     font-size: 30px;
     background-color: violet;
     border: 1px solid black;
+    visibility: hidden;
 }
 
+.active {
+    visibility: visible !important;
+    transform: translate(0) !important;
+}
