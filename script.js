@@ -8,7 +8,7 @@ let $playerName = $('.current-name');
 let $timer = $('.current-timer');
 let $score = $('.current-score');
 let $currentScore = 0;
-let $reset = $('.restart')
+let $reset = $('input')
 
 //Let the games begin!
 
@@ -37,7 +37,7 @@ function play() {
         if (countDown == -1) {
             console.log("Game over!");
             clearInterval(clock)
-            alert('Game over!')
+            alert('Congrats! you scored' + $score + 'points!')
             $reset.addClass('active');
 
         }
@@ -57,13 +57,12 @@ function reset() {
 }
 
 $reset.click(function() {
-    Program.restart();
+      onClick='window.location.reload()';
    })
 });
 
 //functions needed
-/*startGame()
-randomHole()
+/*randomHole()
 reset()
  */
 
