@@ -37,19 +37,19 @@ function play() {
         if (countDown == -1) {
             console.log("Game over!");
             clearInterval(clock)
-            alert('Congrats! you scored' + $score + 'points!')
+            $(alert('Congrats! you scored' + $score + 'points!'))
             $reset.addClass('active');
 
         }
 
-    }, 1000);
+    }, 500);
 
 
     // Time to let the troll out!
-function randomHole() {
-setInterval(function() {
-    let ind = Math.floor(Math.random() * 5) + 1;
-$($plots[ind]).append($troll);
+    function randomHole() {
+    setInterval(function() {
+        let ind = Math.floor(Math.random() * 5) + 1;
+    $($plots[ind]).append($troll);
 
 
 }, 1000);
