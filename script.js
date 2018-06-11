@@ -52,7 +52,7 @@ function play() {
     $($plots[ind]).append($troll);
 
 
-}, 500);
+}, 800);
    
 }
 $troll.addClass('active');
