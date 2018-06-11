@@ -1,0 +1,14 @@
+body {
+    background-image: url(../img/bridge1.png);
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    background-size: auto;
+    font-family: 'eater', cursive; 
+    color: indigo;
+    
+}
+
+input {
+    font-family: 'eater', cursive;
+}
