@@ -42,7 +42,7 @@ function play() {
 
         }
 
-    }, 500);
+    }, 1000);
 
 
     // Time to let the troll out!
@@ -52,7 +52,7 @@ function play() {
     $($plots[ind]).append($troll);
 
 
-}, 1000);
+}, 500);
    
 }
 $troll.addClass('active');
