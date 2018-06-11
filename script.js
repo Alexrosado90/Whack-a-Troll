@@ -14,7 +14,7 @@ let $reset = $('input')
 
 function play() {
     randomHole()
-    setTimeout(play, (Math.random() * 700 + 200));
+    //setTimeout(play, (Math.random() * 700 + 200));
 }
 
 
@@ -47,6 +47,12 @@ function play() {
 
     // Time to let the troll out!
 function randomHole() {
+setInterval(function() {
+    let ind = Math.floor(Math.random() * 5) + 1;
+$($plots[ind]).append($troll);
+
+
+}, 1000);
    
 }
 $troll.addClass('active');
@@ -61,8 +67,4 @@ $reset.click(function() {
    })
 });
 
-//functions needed
-/*randomHole()
-reset()
- */
 
